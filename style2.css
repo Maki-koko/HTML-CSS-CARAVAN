@@ -2,61 +2,129 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #6c6b6d;
 }
 
-.header {
-  width: 100%;
-  height: 120px;
+a {
+  text-decoration: none;
+}
+header {
+  width: 90%;
+  padding: 15px 0;
+  margin: 0 auto;
+  text-align: center;
   background-color: red;
 }
 
-.header-top {
-  width: 100%;
-  height: 70px;
-  background-color: hotpink;
+.nav-list {
+  text-align: center;
+  padding: 10px 0;
+  margin: 0 auto;
 }
 
-.header-bottom {
-  width: 100%;
-  height: 50px;
-  background-color: pink;
+.nav-list-item {
+  list-style: none; /*箇条書きリストの行頭(・等➞なし*/
+  display: inline-block;  /*インラインブロック要素に指定　横並びで余白など設定できる状態*/
+  margin: 0 20px;
+  padding: 70px 0;
 }
 
 .main-visual {  
   width: 100%;
   height: 300px;
-  background-color: orange;
+  background-image: url(img/mv.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .main-visual-content {  
-  width: 350px;
+  width: 40%;
   height: 300px;
-  background-color: gold;
+  text-align: center;
+  padding-top: 105px;
+  background-color: rgba(0,0,0,0.5);
 }
 
-.main {  
-  width: 840px; 
+.main-visual-text {
+  color: #fff;
+}
+
+.main-visual-name {
+  margin-top: 30px; 
+  color: #fff;
+}
+
+main {  
+  width: 800px; 
   /*↑marginを0 autoにするときは必ず設定*/
-  /*height: 1400px;*/
-  /*background-color: green;*/
   display: flex; /*Flexbox使います*/
   justify-content: center; /*子要素中央寄せにします。*/
   margin: 0 auto; /*mainを中央寄せにする 上下0、左右auto*/
+  padding: 70px 0;
+}
+
+.blog-heading {
+  border-bottom: 8px solid #f7f7f7;
+  text-align: center;
+  line-height: 0.6;
 }
 
 .blog {
-  width: 600px; 
-  height: 1400px;
-  background-color: limegreen;
-}
-.sidebar {
-  width: 240px;
-  height: 1400px;
-  background-color: palegreen;
+  width: 540px;
+  margin-right: 30px;
 }
 
-.footer {  
+.blog-box {
+  padding-top: 50px;
+}
+
+.blog-item {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #f7f7f7;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.blog-image {
+  height: 180px;
+}
+
+.blog-text {
+  padding-top: 25px;
+  padding-left: 30px;
+}
+
+.blog-text-heading {
+  padding-bottom: 15px;
+}
+
+.blog-date {
+  font-size: 12px;
+  display: inline-block;
+}
+
+.category {
+  display: inline-block;
+  padding: 5px 8px;
+  background-color: #acabab;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 11px;
+}
+
+.sidebar {
+  width: 230px;
+  background-color: green;
+}
+
+footer {  
   width: 100%;
   height: 120px;
-  background-color: blue;
+  text-align: center;
+  line-height: 120px;
+  background-color: #848282;
+}
+.footer-text {
+  color: #fff;
 }
